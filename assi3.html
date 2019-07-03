@@ -1,0 +1,63 @@
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+</head>
+<style>
+.active{
+	float:right;
+}
+.edit{
+	float:right;
+}
+.form{
+	text-align:center;
+}
+</style>
+<body>
+<br><br>
+<div class="container well">
+	<center><h4>EDIT A BLOG</h4></center>
+	<br><br><br>
+<div class="row">
+	<div class="col-md-4"></div>
+<div class="col-md-4">
+	<form action="assi1.html">
+<input type="text" class="form-controls" placeholder="Enter the title" id="update1">
+
+<br><br>
+<textarea id="update2" rows="4" cols="52" class="form-controls" placeholder="Enter the content"></textarea>
+
+
+<br><br>
+<center>
+	<button class="btn btn-danger">Cancel</button>
+	<button class="btn btn-primary" role="button" onclick="myFunction();">Update</button></center>
+	</form>
+</div>
+</div></div>
+
+
+<script>
+    var x=localStorage.getItem("a");
+    var y=localStorage.getItem("b");
+
+    document.getElementById("update1").value=x;
+    document.getElementById("update2").value=y;
+    function myFunction() {
+ 
+   var names = document.getElementById("update1").value;
+   var name = document.getElementById("update2").value;
+  localStorage.setItem("a",names);
+  localStorage.setItem("b",name);
+
+}
+	</script>
+</script>
+</body>
+</html>

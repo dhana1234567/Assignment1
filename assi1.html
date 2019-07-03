@@ -1,0 +1,60 @@
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+</head>
+<style>
+button{
+
+	color:white;
+}
+.edit{
+	float:right;
+}
+
+</style>
+<body>
+	<form>
+<br><br>
+<div class="container well">
+	<center><h4>BLOG ASSIGNMENT</h4></center>
+	
+	<br><br><br>
+<div class="row">
+	<div class="col-md-4"></div>
+
+<div class="col-md-4">
+<input type="text" class="form-controls" id="test" placeholder="Enter the title">
+</div>
+</div>
+
+<!-- <input type="reset"> -->
+<br><br>
+<div class="row">
+	<div class="col-md-4"></div>
+<div class="col-md-4">
+<textarea rows="4" cols="52" class="form-controls" id="test1" placeholder="Enter the content"></textarea>
+</div>
+</div><br>
+<center>
+<button class="btn btn-info"><a href="assi2.html">Create</a></button>
+<button class="btn btn-warning"><i class="far fa-edit"></i><a href="assi3.html">Edit</a></button>
+<button class="btn btn-danger" type="reset">Reset</button></center>
+</div>
+</form>
+
+	<script>
+    var x=localStorage.getItem("a");
+    var y=localStorage.getItem("b");
+
+    document.getElementById("test").value=x;
+    document.getElementById("test1").value=y;
+	</script>
+	
+</body>
+</html>
